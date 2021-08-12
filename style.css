@@ -1,0 +1,201 @@
+:root{
+    --Strong-cyan: #26c0ab;
+    --cian-very-dark:#00494d;
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Light-grayish-cyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* familia de fuentes: 'Space Mono', monoespacio;
+
+input font form family 24px
+
+Los diseños se crearon con los siguientes anchos:
+
+- Móvil: 375px
+- Escritorio: 1440px*/
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    font-family: 'Space Mono', monoespacio;
+    font-weight: 700;
+    color: var(--Darkgrayishcyan);
+    background-color: var(--Lightgrayishcyan);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x:hidden ;
+}
+body > img{
+    width: 80px;
+    margin: 50px auto;
+}
+fieldset{
+    border: none;
+}
+section, article{
+    border-radius: 15px;
+    padding: 10px;
+    min-height: 294px;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+section{
+    background-color: var(--White);
+    width: 100%;
+    max-width: 650px;
+    flex-flow: row wrap;
+}
+section article{
+    width: 50%;
+    min-width: 250px;
+    flex-flow: column nowrap;
+    overflow: hidden;
+}
+.calculator form{
+    width: 100%;
+}
+.calculator label,
+.calculator .porcentaje legend{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.calculator .buy,
+.calculator .number-person{
+    width: 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 8px;
+    color: var(--cian-very-dark);
+    font-weight: 700;
+}
+.calculator .buy{
+    background-image: url(assets/img/icon-dollar.svg);
+    /* background-size: ; */
+}
+.calculator .porcentaje input{
+    width: 25%;
+    background-color: var(--cian-very-dark);
+    margin-bottom: 10px;
+    color: var(--White);
+    font-size: 1.1rem;
+    font-family: 'Space Mono', monoespacio;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+.calculator .porcentaje input:hover{
+    background-color: var(--Strong-cyan);
+    color: var(--cian-very-dark);
+}
+.calculator .number-person{
+    background-image: url(assets/img/icon-person.svg);
+}
+.calculator form input,
+.calculator .porcentaje .input-custom{
+    font-size: 24px;
+    border: none;
+    background-color: var(--Light-grayish-cyan);
+    text-align: right;
+    padding: 5px;
+    color: var(--Darkgrayishcyan);
+}
+.calculator .porcentaje .input-custom{
+    font-size: 18px;
+    font-weight: 700;
+}
+.calculator form input::placeholder{
+    font-family: 'Space Mono', monoespacio;
+}
+.display{
+    background-color: var(--cian-very-dark);
+    padding: 20px;
+}
+.display form{
+    display: block;
+    min-width: 100%;
+    block-size: 270px;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+.display div,
+.display fieldset{
+    display: flex;
+    
+}
+.display div{
+    width: 100%;
+    height: 80%;
+    flex-flow: column nowrap;
+    align-items: center;
+    
+}
+.display fieldset{
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-bottom: 20px ;
+}
+.display label{
+    font-size: 12px;
+    color: var(--White);
+}
+.display label span{
+    display: block;
+    color: var(--Darkgrayishcyan);
+}
+.display input{
+    width: 50%;
+    background-color: transparent;
+    border: none;
+    text-align: right;
+    color: var(--Strong-cyan);
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Space Mono', monoespacio;
+}
+.display input::placeholder{
+    color: var(--Strong-cyan);
+    
+}
+.display .reset{
+    display: block;
+    min-width: 100%;
+    background-color: #0D686D;
+    color: var(--cian-very-dark);
+    text-align: center;
+    /* margin: auto; */
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+@media (max-width: 320px) {
+    .calculator .porcentaje input{
+        width: 45%;
+    }
+    .display{
+        min-height: max-content;
+    }
+    .display form{
+        height: 100%;
+        padding-bottom: 10px;
+    }
+}
