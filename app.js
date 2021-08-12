@@ -59,7 +59,6 @@ numberPerson.addEventListener('keyup', ()=>{
         pay.placeholder = buy.value;
         personPay.placeholder = totalPersona(pay.placeholder, numberPersons);
     }
-
 })
 reset.addEventListener('click', ()=>{
     personPay.placeholder = '$0.00';

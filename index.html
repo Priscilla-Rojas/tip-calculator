@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="assets/img/logo.svg" alt="">
-    <section>
+    <header>
+        <img src="assets/img/logo.svg" alt="">
+    </header>
+    <main class="container">
         <article class="calculator">
             <form action="">
                 <fieldset >
@@ -28,30 +30,30 @@
                     <input type="button" class="porcentje-button" value="15%">
                     <input type="button" class="porcentje-button" value="25%">
                     <input type="button"  class="porcentje-button"value="50%">
-                    <input type="button" class="porcentje-button" value="Custom" class="input-custom" disabled>
+                    <input class="porcentje-button custom" placeholder="Custom" >
                 </fieldset>
                 <fieldset>
                     <label for="number-person" >Number of People</label>
-                    <input type="number" name="" id="number-person" class="number-person" placeholder="0">
+                    <input type="number" id="number-person" class="number-person" placeholder="0">
                 </fieldset>
             </form>
         </article>
         <article class="display">
-            <form action="">
+            <form>
                 <div>
                     <fieldset>
                         <label for="pay">Tip Amount <span>/ person</span></label>
-                        <input disabled type="number" name="" id="pay" class="pay" placeholder="$0.00">
+                        <input disabled type="number" id="pay" class="pay" placeholder="$0.00">
                     </fieldset>
                     <fieldset>
                         <label for="total">Total<span>/ person</span></label>
-                        <input disabled type="number" name="" id="total" class="person-pay" placeholder="$0.00">
+                        <input disabled type="number" id="total" class="person-pay" placeholder="$0.00">
                     </fieldset>
                 </div>
                 <button class="reset" type="reset" value="Reset">Reset</button>
             </form>
         </article>
-    </section>    
+    </main>    
 
     <script src="app.js"></script>
 </body>
