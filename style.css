@@ -45,7 +45,7 @@ fieldset{
 }
 .container, .container > article{
     border-radius: 15px;
-    padding: 10px;
+    padding: 20px;
     min-height: 400px;
     height: max-content;
     display: flex;
@@ -66,6 +66,7 @@ form{
     width: 100%;
     max-width: 850px;
     flex-flow: row wrap;
+    padding: 20px;
 }
 main article{
     width: 50%;
@@ -76,13 +77,13 @@ main article{
 .calculator label,
 .calculator .porcentaje legend{
     display: block;
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 10px;
 }
 .calculator .buy,
 .calculator .number-person{
     width: 100%;
-    background-position: left center;
+    background-position: 20px center;
     background-repeat: no-repeat;
     background-size: 8px;
     color: var(--cian-very-dark);
@@ -93,11 +94,11 @@ main article{
     /* background-size: ; */
 }
 .calculator .porcentaje input{
-    width: 25%;
+    width: 30%;
     background-color: var(--cian-very-dark);
     margin-bottom: 10px;
     color: var(--White);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-family: 'Space Mono', monoespacio;
     font-weight: 500;
     border-radius: 5px;
@@ -154,16 +155,17 @@ main article{
     height: 80%;
     flex-flow: column nowrap;
     align-items: center;
+    padding: 20px;
     
 }
 .display fieldset{
     width: 100%;
     flex-flow: row wrap;
     justify-content: space-between;
-    padding-bottom: 20px ;
+    padding-bottom: 50px ;
 }
 .display label{
-    font-size: 14px;
+    font-size: 16px;
     color: var(--White);
 }
 .display label span{
@@ -176,7 +178,7 @@ main article{
     border: none;
     text-align: right;
     color: var(--Strong-cyan);
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 700;
     font-family: 'Space Mono', monoespacio;
 }
